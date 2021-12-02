@@ -1,0 +1,27 @@
+{% load static %}
+<html>
+<head>
+     <title>Honey's blog</title>
+     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+     <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+
+</head>
+<body>
+      <div class="page-header">
+           <h1><a href="/">Honey's blog</a></h1>
+
+           <p><strong>Описание</strong></p>
+           <p>Крайне интересный блог медового мужика.  В нем я буду рассказывать разного рода истории, произошедшие в жизни разных людей, например друга моего друга, ну или сына маминой подруги и все в этом духе. Не одна из историй не имеет ко мне никакого отношения конечно же. Истории из жизни поэтому вам понравятся, или нет. </p>
+      </div>
+      <div class="content container">
+          <div class="row">
+              <div class="col-md-8">
+                {% block content %}
+                {% endblock %}
+             </div>
+         </div>
+    </div>
+</body>
+</html>
